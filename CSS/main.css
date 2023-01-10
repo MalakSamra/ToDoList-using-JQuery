@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, rgb(0, 145, 255) 50%, rgb(75, 75, 75) 50%)
+}
+.container{
+    height: 500px;
+    width: 400px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    overflow-y: auto;
+}
+h2{
+    color: rgb(221, 68, 12);
+}
+.input{
+    height: 50px;
+    width: 80%;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(75, 75, 75);
+    color: white;
+    padding: 0 10px;
+    margin: 15px 0;
+}
+.input::placeholder{
+    color: rgb(181, 180, 180);
+}
+.addBtn{
+    height: 45px;
+    width: 15%;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 145, 255);
+    color: rgb(0, 145, 255);
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.addBtn:hover{
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+ul li{
+    background-color: #eee;
+    color: #333;
+    height: 35px;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+}
+ul .fa-check,.fa-trash-can{
+    position: absolute;
+    cursor: pointer;
+}
+ul .fa-check{
+    right: 50px;
+    color: green;
+}
+ul .fa-trash-can{
+    right: 15px;
+    color: red;
+}
+ul .checked{
+    background: lightgreen;
+    text-decoration: line-through;
+}
